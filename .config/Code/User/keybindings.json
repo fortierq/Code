@@ -1,0 +1,71 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+[Quote]",
+        "command": "workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "[Backquote]",
+        "command": "latex-workshop.synctex",
+        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "-latex-workshop.synctex",
+        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\textbf{${TM_SELECTED_TEXT}}$0"
+        }
+    },
+    {
+        "key": "shift+enter",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\\\\\\\\n"
+        }
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\pause\n\\medskip\n\n"
+        }
+    },
+    {
+        "key": "ctrl+D",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{exampleblock}{Définition}\n\t$1\n\\end{exampleblock}\n$0"
+        }
+    },
+    {
+        "key": "ctrl+T",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{alertblock}{Théorème}\n\t$1\n\\end{alertblock}\n$0"
+        }
+    },
+    {
+        "key": "[Backquote]",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == python",
+        "args": {
+            "snippet": "**Exercice** : "
+        }
+    },
+]
