@@ -45,11 +45,19 @@
         }
     },
     {
+        "key": "alt+E",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{alertblock}{Exercice}\n\t$1\n\\end{alertblock}$0"
+        }
+    },
+    {
         "key": "ctrl+D",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{exampleblock}{Définition}\n\t$1\n\\end{exampleblock}\n$0"
+            "snippet": "\\begin{exampleblock}{Définition}\n\t$1\n\\end{exampleblock}$0"
         }
     },
     {
@@ -57,7 +65,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{alertblock}{Théorème}\n\t$1\n\\end{alertblock}\n$0"
+            "snippet": "\\begin{alertblock}{Théorème}\n\t$1\n\\end{alertblock}$0"
         }
     },
     {
@@ -89,7 +97,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{minted}{$1}\n\t$2\n\\end{minted}\n$0"
+            "snippet": "\\begin{center}\r\n    \\begin{minipage}{0.6\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=10pt]{$1}\r\n$2    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n$0"
         }
     },
 ]
