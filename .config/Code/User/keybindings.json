@@ -23,7 +23,7 @@
     {
         "key": "ctrl+q",
         "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus && editorLangId == 'latex'",
+        "when": "editorTextFocus",
         "args": {
             "snippet": "\\textbf{${TM_SELECTED_TEXT}}$0"
         }
@@ -66,6 +66,30 @@
         "when": "editorTextFocus && editorLangId == python",
         "args": {
             "snippet": "**Exercice** : "
+        }
+    },
+    {
+        "key": "alt+v",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\verb|${TM_SELECTED_TEXT}|$0"
+        }
+    },
+    {
+        "key": "alt+f",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{frame}[fragile]\n\t\\frametitle{$1}\n\n\t$2\n\\end{frame}\n$0"
+        }
+    },
+    {
+        "key": "alt+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{minted}{$1}\n\t$2\n\\end{minted}\n$0"
         }
     },
 ]
