@@ -108,4 +108,12 @@
             "snippet": "\\begin{center}\r\n    \\begin{minipage}{0.6\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=10pt]{$1}\r\n$2    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n$0"
         }
     },
+    {
+        "key": "alt+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == markdown",
+        "args": {
+            "snippet": "<center><img src=img/$1 width=300></center>"
+        }
+    },
 ]
