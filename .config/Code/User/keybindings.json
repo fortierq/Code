@@ -71,7 +71,7 @@
     {
         "key": "[Backquote]",
         "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus && editorLangId == python",
+        "when": "editorTextFocus && editorLangId == markdown",
         "args": {
             "snippet": "**Exercice** : "
         }
@@ -82,6 +82,14 @@
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
             "snippet": "\\verb|${TM_SELECTED_TEXT}|$0"
+        }
+    },
+    {
+        "key": "alt+v",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == markdown",
+        "args": {
+            "snippet": "`${TM_SELECTED_TEXT}`"
         }
     },
     {
