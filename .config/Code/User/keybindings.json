@@ -23,7 +23,7 @@
     {
         "key": "ctrl+q",
         "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus",
+        "when": "editorTextFocus and editorLangId == 'latex'",
         "args": {
             "snippet": "\\textbf{${TM_SELECTED_TEXT}}$0"
         }
