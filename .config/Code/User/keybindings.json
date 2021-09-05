@@ -21,11 +21,19 @@
         "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
     },
     {
-        "key": "ctrl+q",
+        "key": "alt+b",
         "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus and editorLangId == 'latex'",
+        "when": "editorTextFocus and editorLangId == latex",
         "args": {
             "snippet": "\\textbf{${TM_SELECTED_TEXT}}$0"
+        }
+    },
+    {
+        "key": "alt+u",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus and editorLangId == latex",
+        "args": {
+            "snippet": "\\underline{${TM_SELECTED_TEXT}}$0"
         }
     },
     {
@@ -115,5 +123,9 @@
         "args": {
             "snippet": "<center><img src=img/$1 width=300></center>"
         }
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
     },
 ]
