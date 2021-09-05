@@ -23,7 +23,7 @@
     {
         "key": "alt+b",
         "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus and editorLangId == latex",
+        "when": "editorTextFocus && editorLangId == latex",
         "args": {
             "snippet": "\\textbf{${TM_SELECTED_TEXT}}$0"
         }
@@ -31,7 +31,7 @@
     {
         "key": "alt+u",
         "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus and editorLangId == latex",
+        "when": "editorTextFocus && editorLangId == latex",
         "args": {
             "snippet": "\\underline{${TM_SELECTED_TEXT}}$0"
         }
