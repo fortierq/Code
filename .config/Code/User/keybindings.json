@@ -29,6 +29,22 @@
         }
     },
     {
+        "key": "alt+p",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\pause$0"
+        }
+    },
+    {
+        "key": "alt+x",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{exo}\n\t$0\n\\begin{exo}"
+        }
+    },
+    {
         "key": "alt+u",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
@@ -127,5 +143,10 @@
     {
         "key": "ctrl+q",
         "command": "-workbench.action.quit"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
     },
 ]
