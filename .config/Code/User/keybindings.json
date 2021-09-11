@@ -1,5 +1,15 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+    // Toggle between terminal and editor focus
+    {
+        "key": "[Backquote]",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "[Backquote]",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
     {
         "key": "ctrl+[Quote]",
         "command": "workbench.action.terminal.openNativeConsole",
@@ -93,7 +103,7 @@
         }
     },
     {
-        "key": "[Backquote]",
+        "key": "alt+e",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == markdown",
         "args": {
