@@ -131,7 +131,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{frame}[fragile]\n\t\\frametitle{$1}\n\n\t$2\n\\end{frame}\n$0"
+            "snippet": "\\begin{frame}[fragile]{\\secname}\n\t$2\n\\end{frame}\n$0"
         }
     },
     {
@@ -139,7 +139,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{center}\r\n    \\begin{minipage}{0.6\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=10pt]{$1}\r\n$2    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n$0"
+            "snippet": "\\begin{center}\r\n    \\begin{minipage}{0.6\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=10pt]{ocaml}\r\n$1    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n$0"
         }
     },
     {
@@ -151,6 +151,30 @@
         }
     },
     {
+        "key": "alt+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == markdown",
+        "args": {
+            "snippet": "<mark>${TM_SELECTED_TEXT}$1</mark>"
+        }
+    },
+    {
+        "key": "alt+s",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\section{${TM_SELECTED_TEXT}$1}$0"
+        }
+    },
+    {
+        "key": "alt+c",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == markdown",
+        "args": {
+            "snippet": "<center>$1</center>"
+        }
+    },
+    {
         "key": "ctrl+q",
         "command": "-workbench.action.quit"
     },
@@ -158,5 +182,13 @@
         "key": "ctrl+b",
         "command": "-markdown.extension.editing.toggleBold",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "f1",
+        "command": "git.sync"
+    },
+    {
+        "key": "f1",
+        "command": "-workbench.action.showCommands"
     },
 ]
