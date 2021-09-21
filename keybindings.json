@@ -75,7 +75,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\pause\n\\medskip\n\n"
+            "snippet": "\\pause\n\\bigskip\n"
         }
     },
     {
@@ -87,7 +87,7 @@
         }
     },
     {
-        "key": "ctrl+D",
+        "key": "alt+D",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
@@ -95,11 +95,19 @@
         }
     },
     {
+        "key": "alt+a",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{algo}{$1}{10cm}\n\t$2\n\\end{algo}$0"
+        }
+    },
+    {
         "key": "ctrl+T",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{alertblock}{Théorème}\n\t$1\n\\end{alertblock}$0"
+            "snippet": "\\begin{block}{Théorème}\n\t$1\n\\end{block}$0"
         }
     },
     {
@@ -139,7 +147,15 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{center}\r\n    \\begin{minipage}{0.6\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=10pt]{ocaml}\r\n$1    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n$0"
+            "snippet": "\\begin{center}\r\n    \\begin{minipage}{.8\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=5pt]{ocaml}\r\n$1    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n$0"
+        }
+    },
+    {
+        "key": "alt+shift+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{center}\r\n    \\begin{minipage}{.8\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=5pt]{python}\r\n$1    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n$0"
         }
     },
     {
