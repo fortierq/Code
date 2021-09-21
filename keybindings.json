@@ -103,7 +103,7 @@
         }
     },
     {
-        "key": "alt+B",
+        "key": "ctrl+P",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
