@@ -103,14 +103,6 @@
         }
     },
     {
-        "key": "ctrl+P",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus && editorLangId == latex",
-        "args": {
-            "snippet": "\\begin{block}{Problème}\n\t$1\n\\end{block}$0"
-        }
-    },
-    {
         "key": "alt+e",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == markdown",
