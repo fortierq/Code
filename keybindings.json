@@ -75,7 +75,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\pause\n\\medskip\n\n"
+            "snippet": "\\pause\n\\medskip\n"
         }
     },
     {
