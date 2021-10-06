@@ -51,7 +51,15 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{exo}\n\t$0\n\\begin{exo}"
+            "snippet": "\\begin{exo}\n\t$0\n\\end{exo}"
+        }
+    },
+    {
+        "key": "alt+o",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\boxed{${TM_SELECTED_TEXT}}$0"
         }
     },
     {
@@ -60,6 +68,14 @@
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
             "snippet": "\\underline{${TM_SELECTED_TEXT}}$0"
+        }
+    },
+    {
+        "key": "alt+c",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\vert ${TM_SELECTED_TEXT} \\vert$0"
         }
     },
     {
@@ -75,7 +91,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\pause\n\\bigskip\n"
+            "snippet": "\\pause\n\\medskip\n"
         }
     },
     {
@@ -92,6 +108,14 @@
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
             "snippet": "\\begin{exampleblock}{Définition}\n\t$1\n\\end{exampleblock}$0"
+        }
+    },
+    {
+        "key": "alt+l",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\if\\cor1\n\\begin{emphase}\n\t\\textbf{Solution} :\n\t${TM_SELECTED_TEXT}$0\n\\end{emphase}\n\\fi"
         }
     },
     {
@@ -119,11 +143,27 @@
         }
     },
     {
+        "key": "alt+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\ocaml{${TM_SELECTED_TEXT}$1}$0"
+        }
+    },
+    {
+        "key": "alt+shift+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\mintinline{python}{${TM_SELECTED_TEXT}$1}$0"
+        }
+    },
+    {
         "key": "alt+v",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\verb|${TM_SELECTED_TEXT}|$0"
+            "snippet": "\\verb|${TM_SELECTED_TEXT}$1|$0"
         }
     },
     {
@@ -147,7 +187,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{center}\r\n    \\begin{minipage}{.8\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=5pt]{ocaml}\r\n$1    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n$0"
+            "snippet": "\\begin{center}\r\n    \\begin{minipage}{.8\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=5pt]{ocaml}\r\n$0    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n"
         }
     },
     {
@@ -155,7 +195,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{center}\r\n    \\begin{minipage}{.8\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=5pt]{python}\r\n$1    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}\r\n$0"
+            "snippet": "\\medskip\\begin{emphase}\n\t\\begin{minted}{python}\n$1\n\t\\end{minted}\n\\end{emphase}\n$0"
         }
     },
     {
