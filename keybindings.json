@@ -155,7 +155,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\mintinline{python}{${TM_SELECTED_TEXT}$1}$0"
+            "snippet": "\\python{${TM_SELECTED_TEXT}$1}$0"
         }
     },
     {
@@ -179,7 +179,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{frame}[fragile]{\\secname}\n\t$2\n\\end{frame}\n$0"
+            "snippet": "\\begin{frame}[fragile]{\\ttl}\n\t$2\n\\end{frame}\n$0"
         }
     },
     {
@@ -219,7 +219,15 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\section{${TM_SELECTED_TEXT}$1}$0"
+            "snippet": "\\section{${TM_SELECTED_TEXT}$0}"
+        }
+    },
+    {
+        "key": "alt+shift+s",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\subsection{${TM_SELECTED_TEXT}$0}"
         }
     },
     {
