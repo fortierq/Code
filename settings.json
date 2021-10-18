@@ -1,0 +1,161 @@
+{
+    "[latex]": {
+        "editor.formatOnSave": false
+    },
+    "git.confirmSync": false,
+    "tabnine.experimentalAutoImports": true,
+    "python.formatting.blackArgs": [
+        "--line-length=80"
+    ],
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style={based_on_style:pep8,column_limit:120}"
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "python.venvFolders": [
+        "~/.cache/pypoetry/virtualenvs"
+    ],
+    "python.venvPath": "~/.cache/pypoetry/virtualenvs",
+    "python.languageServer": "Pylance",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E501,E302,E305"
+    ],
+    "editor.acceptSuggestionOnEnter": "off",
+    "C_Cpp.updateChannel": "Insiders",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.showStartPage": false,
+    "gitlens.menus": {
+        "editor": {
+            "blame": false,
+            "clipboard": true,
+            "compare": true,
+            "history": false,
+            "remote": false
+        },
+        "editorGroup": false,
+        "editorTab": {
+            "clipboard": true,
+            "compare": true,
+            "history": true,
+            "remote": true
+        },
+        "explorer": {
+            "clipboard": true,
+            "compare": true,
+            "history": true,
+            "remote": true
+        },
+        "scm": {
+            "authors": true
+        },
+        "scmGroupInline": {
+            "stash": true
+        },
+        "scmGroup": {
+            "compare": true,
+            "openClose": true,
+            "stash": true
+        },
+        "scmItem": {
+            "clipboard": true,
+            "compare": true,
+            "history": true,
+            "remote": false,
+            "stash": true
+        }
+    },
+    "git.autofetch": true,
+    "terminal.integrated.tabs.enabled": true,
+    "sourcery.token": "user_esApfk6UUCZgIPX_4hZakDjt2AHBEKushsrO5wS2atFP139v3NqAWWXp7lI",
+    "editor.quickSuggestions": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": false,
+        "markdown": false,
+        "ignore": false,
+        "ocaml": false
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "notebook.lineNumbers": "on",
+    "terminal.integrated.inheritEnv": false,
+    "[ocaml]": {
+        "editor.defaultFormatter": "ocamllabs.ocaml-platform"
+    },
+    "editor.suggest.preview": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "extensions.ignoreRecommendations": true,
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.bak*",
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.synctex(busy)",
+        "*.synctex.gz(busy)",
+        "*.nav",
+        "*.vrb"
+    ],
+    "latex-workshop.latexindent.args": [
+        "-w",
+        "%TMPFILE%"
+    ],
+    "editor.formatOnSave": false,
+    "editor.minimap.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "breadcrumbs.enabled": false,
+    "notebook.insertToolbarLocation": "hidden",
+    "notebook.globalToolbar": false,
+    "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "lualatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-lualatex",
+                "-outdir=%OUTDIR%",
+                "--shell-escape",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+    ],
+    "editor.detectIndentation": false,
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "window.zoomLevel": 2,
+}
