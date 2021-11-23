@@ -143,6 +143,14 @@
         }
     },
     {
+        "key": "ctrl+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\cpp{${TM_SELECTED_TEXT}$1}$0"
+        }
+    },
+    {
         "key": "alt+i",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
