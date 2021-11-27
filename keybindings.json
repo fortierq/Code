@@ -123,7 +123,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\\\\\\\\\if\\cor1\n\\begin{emphase}\n\t\\textbf{Solution} : ${TM_SELECTED_TEXT}$0\n\\end{emphase}\n\\fi"
+            "snippet": "\\if\\cor1\\\\\\\\\n\\begin{emphase}\n\t\\textbf{Solution} : ${TM_SELECTED_TEXT}$0\n\\end{emphase}\n\\fi"
         }
     },
     {
