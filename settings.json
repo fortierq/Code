@@ -138,7 +138,7 @@
     "breadcrumbs.enabled": false,
     "notebook.insertToolbarLocation": "hidden",
     "notebook.globalToolbar": false,
-    "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
+    "latex-workshop.latex.recipe.default": "lualatex",
     "latex-workshop.latex.tools": [
         {
             "name": "lualatexmk",
@@ -157,7 +157,6 @@
     ],
     "editor.detectIndentation": false,
     "latex-workshop.latex.autoBuild.run": "onSave",
-    "window.zoomLevel": 2,
     "latex-workshop.latex.watch.files.ignore": [
         "**/*.bbx",
         "**/*.bbl",
