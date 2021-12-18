@@ -203,9 +203,17 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{center}\r\n    \\begin{minipage}{.7\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=5pt]{ocaml}\r\n$0    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}"
+            "snippet": "\\begin{center}\r\n    \\begin{code}{python}\r\n$0\r\n    \\end{code}\r\n\\end{center}"
         }
-    },
+    }
+    // {
+    //     "key": "alt+m",
+    //     "command": "editor.action.insertSnippet",
+    //     "when": "editorTextFocus && editorLangId == latex",
+    //     "args": {
+    //         "snippet": "\\begin{center}\r\n    \\begin{minipage}{.7\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=5pt]{ocaml}\r\n$0    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}"
+    //     }
+    // },
     {
         "key": "alt+shift+m",
         "command": "editor.action.insertSnippet",
