@@ -85,7 +85,6 @@
         "*": true,
         "yaml": true,
         "plaintext": false,
-        "markdown": false,
         "ignore": false,
         "ocaml": false
     },
@@ -138,23 +137,7 @@
     "breadcrumbs.enabled": false,
     "notebook.insertToolbarLocation": "hidden",
     "notebook.globalToolbar": false,
-    "latex-workshop.latex.recipe.default": "lualatex",
-    "latex-workshop.latex.tools": [
-        {
-            "name": "lualatexmk",
-            "command": "latexmk",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-lualatex",
-                "-outdir=%OUTDIR%",
-                "--shell-escape",
-                "%DOC%"
-            ],
-            "env": {}
-        },
-    ],
+    "latex-workshop.latex.recipe.default": "lastUsed",
     "editor.detectIndentation": false,
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.watch.files.ignore": [

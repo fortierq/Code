@@ -47,6 +47,22 @@
         }
     },
     {
+        "key": "alt+p",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\pause$0"
+        }
+    },
+    {
+        "key": "alt+q",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\quad$0"
+        }
+    },
+    {
         "key": "alt+k",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
@@ -143,11 +159,35 @@
         }
     },
     {
+        "key": "alt+T",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{block}{Théorème}\n\t$1\n\\end{block}$0"
+        }
+    },
+    {
         "key": "alt+e",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == markdown",
         "args": {
             "snippet": "**Exercice** : "
+        }
+    },
+    {
+        "key": "alt+t",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "<center><img src=https://github.com/fortierq/tikz/blob/master/$0.png?raw=true width=400></center>"
+        }
+    },
+    {
+        "key": "alt+shift+t",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\documentclass[convert={outfile=\\jobname.png}]{standalone}\n\\usepackage{base}\n\n\\begin{document}\n\t$0\n\\end{document}\n"
         }
     },
     {
@@ -278,5 +318,30 @@
     {
         "key": "f1",
         "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "workbench.action.terminal.runSelectedText",
+        "when": "editorTextFocus && editorLangId == 'shellscript'"
     },
 ]
