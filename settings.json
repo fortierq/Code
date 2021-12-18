@@ -134,7 +134,7 @@
     "editor.formatOnSave": false,
     "editor.minimap.enabled": false,
     "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.colorTheme": "GitHub Dark High Contrast",
     "breadcrumbs.enabled": false,
     "notebook.insertToolbarLocation": "hidden",
     "notebook.globalToolbar": false,
