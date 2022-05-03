@@ -47,14 +47,6 @@
         }
     },
     {
-        "key": "alt+p",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus && editorLangId == latex",
-        "args": {
-            "snippet": "\\pause$0"
-        }
-    },
-    {
         "key": "alt+q",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
@@ -99,7 +91,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\c{${TM_SELECTED_TEXT}$0}"
+            "snippet": "\\begin{center}\n\t\\begin{code}{$1}\n$0\n\t\\end{code}\n\\end{center}"
         }
     },
     {
@@ -115,7 +107,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\pause\n\\medskip\n"
+            "snippet": "\\pause\\medskip\n"
         }
     },
     {
@@ -183,11 +175,35 @@
         }
     },
     {
+        "key": "alt+t",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{center}\n\t\\includestandalone[width=\\textwidth]{\/workspace\/tikz\/$1.tex}\n\\end{center}\n$0"
+        }
+    },
+    {
+        "key": "ctrl+k",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\tikzpdf{$1}$0"
+        }
+    },
+    {
+        "key": "alt+5",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\[${TM_SELECTED_TEXT}$1\\]$0"
+        }
+    },
+    {
         "key": "alt+shift+t",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\documentclass[convert={outfile=\\jobname.png}]{standalone}\n\\usepackage{base}\n\n\\begin{document}\n\t$0\n\\end{document}\n"
+            "snippet": "\\documentclass[convert={outfile=\\jobname.png}]{standalone}\n\\usepackage{draw}\n\n\\begin{document}\n\t$0\n\\end{document}\n"
         }
     },
     {
@@ -227,7 +243,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == markdown",
         "args": {
-            "snippet": "`${TM_SELECTED_TEXT}`"
+            "snippet": "`${TM_SELECTED_TEXT}$0`"
         }
     },
     {
@@ -238,14 +254,14 @@
             "snippet": "\\begin{frame}[fragile]{\\ttl}\n\t$2\n\\end{frame}\n$0"
         }
     },
-    {
-        "key": "alt+m",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus && editorLangId == latex",
-        "args": {
-            "snippet": "\\begin{center}\r\n    \\begin{minipage}{.7\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=5pt]{ocaml}\r\n$0    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}"
-        }
-    },
+    // {
+    //     "key": "alt+m",
+    //     "command": "editor.action.insertSnippet",
+    //     "when": "editorTextFocus && editorLangId == latex",
+    //     "args": {
+    //         "snippet": "\\begin{center}\r\n    \\begin{minipage}{.7\\textwidth}\r\n    \\begin{minted}[frame=single,framesep=5pt]{ocaml}\r\n$0    \r\n    \\end{minted}\r\n    \\end{minipage}\r\n\\end{center}"
+    //     }
+    // },
     {
         "key": "alt+shift+m",
         "command": "editor.action.insertSnippet",
@@ -335,5 +351,10 @@
         "key": "ctrl+enter",
         "command": "workbench.action.terminal.runSelectedText",
         "when": "editorTextFocus && editorLangId == 'shellscript'"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.emmet.action.expandAbbreviation",
+        "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
     },
 ]

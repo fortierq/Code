@@ -84,9 +84,11 @@
     "github.copilot.enable": {
         "*": true,
         "yaml": true,
-        "plaintext": false,
+        "plaintext": true,
+        "markdown": true,
         "ignore": false,
-        "ocaml": false
+        "ocaml": true,
+        "c": true
     },
     "notebook.cellToolbarLocation": {
         "default": "right",
@@ -133,14 +135,12 @@
     "editor.formatOnSave": false,
     "editor.minimap.enabled": false,
     "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "GitHub Sharp",
     "breadcrumbs.enabled": false,
     "notebook.insertToolbarLocation": "hidden",
     "notebook.globalToolbar": false,
     "latex-workshop.latex.recipe.default": "lastUsed",
     "editor.detectIndentation": false,
     "latex-workshop.latex.autoBuild.run": "onSave",
-    "window.zoomLevel": 2,
     "latex-workshop.latex.watch.files.ignore": [
         "**/*.bbx",
         "**/*.bbl",
@@ -174,4 +174,14 @@
         "**/*.sty",
         "**/*.cls"
     ],
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDelete": false,
+    "jupyter.askForKernelRestart": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "http.systemCertificates": false,
+    "workbench.colorCustomizations": {},
+    "window.zoomLevel": 2,
+    "notebook.output.textLineLimit": 100,
+    "workbench.colorTheme": "Default High Contrast",
 }
