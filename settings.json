@@ -181,7 +181,6 @@
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "http.systemCertificates": false,
     "workbench.colorCustomizations": {},
-    "window.zoomLevel": 2,
     "notebook.output.textLineLimit": 100,
     "workbench.colorTheme": "Default High Contrast",
     "git.suggestSmartCommit": false,
